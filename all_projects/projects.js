@@ -1,15 +1,12 @@
 function ProjectsPage() {
     return (
         <div>
-            {/* NAV BAR */}
             <nav className="main-nav">
                 <div className="nav-brand">
-                    {/* Link back to Homepage */}
                     <a href="../homepage/homepage.html">Apostolos Tsano</a>
                 </div>
                 <ul className="nav-links">
                     <li><a href="#" style={{color: '#468691'}}>All Projects</a></li>
-                    {/* Link to Contact Page */}
                     <li><a href="../contact_me/contact.html">Contact Me</a></li>
                 </ul>
             </nav>

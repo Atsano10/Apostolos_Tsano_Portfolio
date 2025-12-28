@@ -1,15 +1,11 @@
 function ContactPage() {
     return (
-        // Added className="page-wrapper" here to control the full page layout
         <div className="page-wrapper">
-            {/* NAV BAR */}
             <nav className="main-nav">
                 <div className="nav-brand">
-                    {/* Link back to Homepage */}
                     <a href="../homepage/homepage.html">Apostolos Tsano</a>
                 </div>
                 <ul className="nav-links">
-                    {/* Link to All Projects */}
                     <li><a href="../all_projects/projects.html">All Projects</a></li>
                     <li><a href="#" style={{color: '#468691'}}>Contact Me</a></li>
                 </ul>

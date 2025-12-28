@@ -1,5 +1,4 @@
 :root {
-    /* --- COOL DARK PALETTE --- */
     --matte-black: #12272C;
     --charcoal:    #11485D;
     --powder-blue: #CADFE8;
@@ -22,7 +21,6 @@ body {
     padding-top: 80px; 
 }
 
-/* --- Navigation Bar --- */
 .main-nav {
     display: flex;
     justify-content: space-between;
@@ -32,7 +30,6 @@ body {
     border-bottom: 4px solid var(--blue-green);
     flex-wrap: wrap;
 
-    /* KEEPS NAV AT THE TOP */
     position: fixed;
     top: 0;
     left: 0;
@@ -83,7 +80,6 @@ body {
     }
 }
 
-/* --- HERO SECTION (Reverted Size) --- */
 .hero-section {
     width: 100%;
     background-color: var(--charcoal); 
@@ -95,7 +91,6 @@ body {
     height: auto; 
 }
 
-/* --- CIRCULAR CONTAINER --- */
 .profile-pic-circle {
     width: 300px;
     height: 300px;
@@ -114,7 +109,6 @@ body {
     display: block;
 }
 
-/* --- About Me Section --- */
 .about-section {
     padding: 80px 15%;
     text-align: center;
@@ -138,7 +132,6 @@ body {
     margin: 0 auto;
 }
 
-/* --- Skills Section --- */
 .skills-section {
     padding: 60px 10%;
     background-color: var(--charcoal);
@@ -193,7 +186,6 @@ body {
     stroke-width: 6;
 }
 
-/* --- ANIMATED RING --- */
 .circle-progress {
     fill: none;
     stroke-width: 6;
@@ -207,7 +199,6 @@ body {
     stroke-dashoffset: var(--target-offset);
 }
 
-/* --- IMAGE LOGO STYLES --- */
 .skill-center-content {
     position: absolute;
     top: 50%;
@@ -252,7 +243,6 @@ body {
     color: var(--powder-blue);
 }
 
-/* --- Footer --- */
 .simple-footer {
     background: var(--matte-black);
     color: var(--powder-blue);

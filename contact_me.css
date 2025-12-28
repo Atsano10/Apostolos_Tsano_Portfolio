@@ -1,0 +1,140 @@
+:root {
+    --matte-black: #12272C;
+    --charcoal:    #11485D;
+    --powder-blue: #CADFE8;
+    --blue-green:  #468691;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--charcoal);
+    color: var(--powder-blue);
+    min-height: 100vh;
+    position: relative; 
+    overflow-x: hidden; 
+}
+
+/* =========================================
+   BACKGROUND BUBBLES STYLES
+   ========================================= */
+#aquarium-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(to bottom, var(--charcoal) 0%, #0a2e3b 100%);
+}
+
+.bubble {
+    position: absolute;
+    bottom: -50px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    box-shadow: inset 0 0 6px rgba(255,255,255,0.3);
+    animation-name: float-up;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float-up {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-60vh) translateX(25px); }
+    100% { transform: translateY(-120vh) translateX(-15px); }
+}
+
+/* =========================================
+   MAIN SITE STYLES
+   ========================================= */
+
+#root {
+    position: relative;
+    z-index: 1; 
+}
+
+/* NEW: This class wraps the entire React app */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This forces the wrapper to fill the screen */
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    background-color: var(--matte-black); 
+    border-bottom: 4px solid var(--blue-green);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2; 
+}
+
+.nav-brand a {
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--powder-blue);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-links { list-style: none; display: flex; gap: 30px; }
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--powder-blue);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.nav-links a:hover { color: var(--blue-green); border-color: var(--blue-green); }
+
+/* CENTERED CONTAINER */
+.contact-container {
+    /* flex-grow: 1 pushes this container to fill all remaining space */
+    flex-grow: 1; 
+    
+    /* These 3 lines center the content inside the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0 10%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
+    font-size: 5rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+}
+
+.contact-info {
+    font-size: 1.6rem;
+    margin-top: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.contact-info a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--blue-green);
+}

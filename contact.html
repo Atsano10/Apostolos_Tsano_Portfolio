@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Apostolos Tsano</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="contact_me.css">
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="aquarium-background"></div>
+
+    <div id="root"></div>
+
+    <script type="text/babel" src="contact_me.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const aquarium = document.getElementById('aquarium-background');
+            const numBubbles = 60; // Increased count since there are no fish
+
+            for (let i = 0; i < numBubbles; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+                
+                // Random horizontal position
+                bubble.style.left = `${Math.random() * 100}vw`;
+                
+                // Random size
+                const size = Math.random() * 30 + 5; // size 5px to 35px
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                
+                // Random speed
+                const duration = Math.random() * 15 + 10; // 10s to 25s float speed
+                bubble.style.animationDuration = `${duration}s`;
+                
+                // Negative delay makes them appear everywhere instantly
+                bubble.style.animationDelay = `-${Math.random() * duration}s`; 
+                
+                // Random transparency
+                bubble.style.opacity = Math.random() * 0.4 + 0.1; 
+                aquarium.appendChild(bubble);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,7 +1,5 @@
 const { useState } = React;
 
-// --- SKILL DATA ---
-// Replace filenames (e.g., 'python.png') with your actual file names
 const skillCategories = [
     {
         title: "Programming Languages",
@@ -50,13 +48,11 @@ function SkillCircle({ skill }) {
                 </svg>
                 
                 <div className="skill-center-content">
-                    {/* Render Image Logo */}
                     <img 
                         src={skill.img} 
                         alt={skill.name} 
                         className="skill-logo"
                     />
-                    {/* Render Percentage Number (hidden until hover) */}
                     <span className="skill-number">{skill.level}%</span>
                 </div>
             </div>

@@ -46,7 +46,6 @@ body {
 
 .nav-links a:hover { color: var(--blue-green); border-color: var(--blue-green); }
 
-/* CONTENT STYLES */
 .container { padding: 60px 10%; }
 
 h1 {

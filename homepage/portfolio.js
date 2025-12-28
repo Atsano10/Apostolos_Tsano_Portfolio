@@ -67,14 +67,14 @@ function HomePage() {
             <nav className="main-nav">
                 <div className="nav-brand">Apostolos Tsano</div>
                 <ul className="nav-links">
-                    <li><a href="../all_projects/projects.html">All Projects</a></li>
-                    <li><a href="../contact_me/contact.html">Contact Me</a></li>
+                    <li><a href="/all_projects/projects.html">All Projects</a></li>
+                    <li><a href="/contact_me/contact.html">Contact Me</a></li>
                 </ul>
             </nav>
             
             <section className="hero-section">
                 <div className="profile-pic-circle">
-                    <img src="./images/image_1.png" alt="Apostolos Tsano" />
+                    <img src="/images/image_1.png" alt="Apostolos Tsano" />
                 </div>
             </section>
 

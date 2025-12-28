@@ -16,9 +16,6 @@ body {
     overflow-x: hidden; 
 }
 
-/* =========================================
-   BACKGROUND BUBBLES STYLES
-   ========================================= */
 #aquarium-background {
     position: absolute;
     top: 0;
@@ -48,20 +45,15 @@ body {
     100% { transform: translateY(-120vh) translateX(-15px); }
 }
 
-/* =========================================
-   MAIN SITE STYLES
-   ========================================= */
-
 #root {
     position: relative;
     z-index: 1; 
 }
 
-/* NEW: This class wraps the entire React app */
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* This forces the wrapper to fill the screen */
+    min-height: 100vh; 
 }
 
 .main-nav {
@@ -99,12 +91,9 @@ body {
 
 .nav-links a:hover { color: var(--blue-green); border-color: var(--blue-green); }
 
-/* CENTERED CONTAINER */
 .contact-container {
-    /* flex-grow: 1 pushes this container to fill all remaining space */
     flex-grow: 1; 
     
-    /* These 3 lines center the content inside the container */
     display: flex;
     flex-direction: column;
     justify-content: center;

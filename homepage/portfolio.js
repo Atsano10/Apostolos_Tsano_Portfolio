@@ -74,7 +74,7 @@ function HomePage() {
             
             <section className="hero-section">
                 <div className="profile-pic-circle">
-                    <img src="../images/image_1.png" alt="Apostolos Tsano" />
+                    <img src="/Apostolos_Tsano_Portfolio/images/image_1.png" alt="Apostolos Tsano" />
                 </div>
             </section>
 

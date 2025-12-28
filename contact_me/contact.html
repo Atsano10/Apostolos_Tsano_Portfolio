@@ -25,28 +25,23 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const aquarium = document.getElementById('aquarium-background');
-            const numBubbles = 60; // Increased count since there are no fish
+            const numBubbles = 60; 
 
             for (let i = 0; i < numBubbles; i++) {
                 const bubble = document.createElement('div');
                 bubble.classList.add('bubble');
                 
-                // Random horizontal position
                 bubble.style.left = `${Math.random() * 100}vw`;
                 
-                // Random size
-                const size = Math.random() * 30 + 5; // size 5px to 35px
+                const size = Math.random() * 30 + 5; 
                 bubble.style.width = `${size}px`;
                 bubble.style.height = `${size}px`;
                 
-                // Random speed
-                const duration = Math.random() * 15 + 10; // 10s to 25s float speed
+                const duration = Math.random() * 15 + 10; 
                 bubble.style.animationDuration = `${duration}s`;
                 
-                // Negative delay makes them appear everywhere instantly
                 bubble.style.animationDelay = `-${Math.random() * duration}s`; 
                 
-                // Random transparency
                 bubble.style.opacity = Math.random() * 0.4 + 0.1; 
                 aquarium.appendChild(bubble);
             }
